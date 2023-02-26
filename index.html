@@ -1,0 +1,54 @@
+<html>
+  <head>
+
+    <!-- Load ML5 -->
+    <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <meta charset="UTF-8" />
+    <title>Is it a phone?</title>
+
+  </head>
+
+  <body>
+    <h1>Is it a phone?</h1>
+
+    <!-- Intro -->
+    <div id="introDiv">
+      To get instructions about the game, press the button below.
+      <button id="playbutton">Instructions</button>
+    </div>
+
+    <!-- Classifier -->
+    <div id="classifierDiv">
+      <p>Upload an Image:</p>
+
+      <!-- Input a file -->
+      <input type="file" id="getval" />
+
+      <p>The image you have uploaded:</p>
+
+      <!-- Uploaded image -->
+      <img
+        id="image"
+        accept="image/*;capture=camera"
+        src="http://via.placeholder.com/180?text=No+Image+Uploaded+Yet"
+        alt="your image"
+      />
+
+    </div>
+
+    <!-- Results -->
+    <p>Results:</p>
+
+    <p id="result">
+      <span id="result"> </span>
+    </p>
+
+    <!-- Script JS -->
+    <script src="app.js"></script>
+    
+  </body>
+</html>
