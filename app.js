@@ -10,7 +10,7 @@ let synth = window.speechSynthesis;
 let playButton = document.querySelector("#playbutton");
 playButton.addEventListener("click", () => {
   speak(
-    `To play this game, upload an image of a phone or something else. If you uploaded an image of a phone, the browser will tell.`
+    `To play this game, upload an image of a phone or an apple. The browser will tell what it is.`
   );
 });
 
