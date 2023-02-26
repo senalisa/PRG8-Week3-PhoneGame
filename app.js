@@ -1,6 +1,7 @@
 // Variables
 const image = document.getElementById("image");
 const result = document.getElementById("result");
+const probability = document.getElementById("probability");
 document.getElementById("getval").addEventListener("change", readURL, true);
 let synth = window.speechSynthesis;
 
