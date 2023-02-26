@@ -5,6 +5,10 @@ const probability = document.getElementById("probability");
 document.getElementById("getval").addEventListener("change", readURL, true);
 let synth = window.speechSynthesis;
 
+window.addEventListener("load", (event) => {
+  speak('Welcome to the game: Is it a phone or an apple.')
+});
+
 // Browser Speech
 // Instructions button Speech
 let playButton = document.querySelector("#playbutton");
